@@ -1,19 +1,12 @@
 import Paddle from "../obstacles/Paddle.js"
 
 export default class Player {
-  constructor(game) {
+  constructor(game, upCode, downCode, x) {
     this.game = game
-    this.paddle = new Paddle(game, 10, 50, 300)
+    this.paddle = new Paddle(game, this, x, 300)
     this.speed = 10
-    this.createKeys()
-  }
-
-  /**
-   * Creates variables for movement keys.
-   */
-  createKeys() {
-    this.upKey = this.game.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W)
-    this.downKey = this.game.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S)
+    this.upKey = game.input.keyboard.addKey(upCode)
+    this.downKey = game.input.keyboard.addKey(downCode)
   }
 
   update() {
