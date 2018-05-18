@@ -1,3 +1,5 @@
+import Player from "./player/Player.js"
+
 const config = {
   type: Phaser.AUTO,
   physics: {
@@ -13,14 +15,16 @@ const config = {
 }
 
 const game = new Phaser.Game(config)
+let playerOne
 
 function preload() {
+  this.load.image("paddle", "../assets/paddle.png")
 }
 
 function create() {
-
+  playerOne = new Player(this)
 }
 
 function update() {
-
+  playerOne.update()
 }
