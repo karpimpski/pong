@@ -45,5 +45,11 @@ export default class Ball {
 
   bounce() {
     this.velocity.x *= -1
+    
+    let paddle
+    if(this.game.playerOne.paddle.sprite.x === this.sprite.x) paddle = this.game.playerOne.paddle
+    else paddle = this.game.playerTwo.paddle
+
+    this.velocity.y = ((paddle.sprite.y - this.sprite.y) * -1 + this.velocity.y)/8
   }
 }
