@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,5 +70,13 @@
        ry="0"
        inkscape:export-xdpi="25.273632"
        inkscape:export-ydpi="25.273632" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.22629164;stroke-miterlimit:3.70000005;stroke-dasharray:none;stroke-opacity:1"
+       id="path829"
+       cx="87.763084"
+       cy="115.15804"
+       r="4.8868542"
+       inkscape:export-xdpi="25.399992"
+       inkscape:export-ydpi="25.399992" />
   </g>
 </svg>
